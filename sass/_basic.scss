@@ -1,0 +1,20 @@
+@use "./varibals" ;
+
+body{
+    background-color:varibals.$base-color;
+    color: gold;
+    font-family:monospace;
+    font-size: 2vw;
+
+    & form{
+        margin-left: 30vw;
+        display: grid;
+        width: 40vw;
+        gap: 1.5vw;
+        box-shadow: -5px 2px 10px rgba(0, 0, 0, 0.2); ;
+        padding: 2vw;
+        border-radius: 0.5vw;
+        margin-top: 5vw;
+        background-color:darkviolet;
+    }
+}

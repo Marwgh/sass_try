@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <form oninput="result.value=parseInt(metascore.value)">
+    <div class="boxIn">
+      <label for="title">Title</label>
+      <input name="title" value="" id="title" type="text" minlength="3" required>
+      <span class="error" hidden>Please provide a game title</span>
+    </div>
+    <div class="boxIn">
+      <label for="description">Description</label>
+      <textarea id="description" name="description"></textarea>
+    </div>
+    <div class="boxIn">
+      <label for="age_limit">Age limit</label>
+      <input name="age_limit" value="" id="age_limit" type="number">
+    </div>
+    <div class="boxIn">
+      <label for="release_date">Release date</label>
+      <input name="release_date" value="" id="release_date" type="date">
+    </div>
+    <fieldset>
+      <legend>Genre</legend>
+      <label for="fps">Fps</label>
+      <input name="genre" value="fps" id="fps" type="checkbox">
+      <label for="sandbox">Sandbox</label>
+      <input name="genre" value="sandbox" id="sandbox" type="checkbox">
+      <label for="fps">Survival</label>
+      <input name="genre" value="survival" id="survival" type="checkbox">
+    </fieldset>
+    <fieldset>
+      <legend>Platform(s)</legend>
+      <label for="personalC">Pc</label>
+      <input name="platform" value="" id="personalC" type="checkbox">
+      <label for="playStation">Ps</label>
+      <input name="platform" value="" id="playStation" type="checkbox">
+      <label for="xbox">Xbox</label>
+      <input name="platform" value="" id="xbox" type="checkbox">
+      <label for="nintendo">Nintendo</label>
+      <input name="platform" value="" id="nintendo" type="checkbox">
+    </fieldset>
+    <div>
+      <fieldset>
+        <legend>Multiplayer</legend>
+        <label for="multiplayer">Multiplayer</label>
+        <input name="multiplayer" value="" id="multiplayer" type="radio">
+        <label for="singleplayer">Singleplayer</label>
+        <input name="multiplayer" value="" id="singleplayer" type="radio">
+      </fieldset>
+    </div>
+    <div class="boxIn">
+      <label for="price">Price</label>
+      <input name="price" value="" id="price" type="text">
+    </div>
+    <div class="boxIn">
+      <label for="metascore">Metascore</label>
+      <input name="metascore" value="" id="metascore" type="range" min="0" max="100">
+      <div><output name="result" for="metascore">0</output>% </div>
+    </div>
+    <div class="boxIn">
+      <label for="developer">Developer</label>
+      <input name="developer" value="" id="developer" type="text">
+    </div>
+
+    <button>Submit</button>
+  </form>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
